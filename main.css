@@ -53,6 +53,13 @@ input::placeholder {
     color: #fff;
 }
 
+.connection a{
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #000;
+}
+
+
 .connection{
     
     color: #fff;

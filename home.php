@@ -42,12 +42,10 @@
             
             <?php
                 echo '<a 
-                class="btn" href="index.php?N='.$_POST['login'].'&E='.$_POST['email'].'&S='.$_POST['contact'].'">Заполнить снова
+                class="btn" href="/index.php?login='.$_POST['login'].'&email='.$_POST['email'].'&contact='.$_POST['contact'].'">Заполнить снова
                 </a>';
-                
+            ?>  
             
-            ?>        
-
         </div>
     </section>
 

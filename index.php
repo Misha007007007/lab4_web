@@ -22,7 +22,18 @@
         
         <div class="connection" id = "connection">
             
-            <form action="home.php" method="post">
+            <form action="home.php?" method="post">
+                <?php 
+                    if(isset($_GET['login'])){
+                        $login = $_GET['login'];
+                        $email = $_GET['email'];
+                        $contact = $_GET['contact'];
+                        echo 'yes';
+                    }else{
+                        echo 'no';
+                    }
+                ?>
+
                 
                 <p><b>Обратная связь</b></p>
                 
@@ -35,11 +46,11 @@
                 <p><b>Откуда вы узнали о нас</b></p>
                 <input type="radio" id="contactChoice1"
                 name="contact">
-                <label for="contactChoice1">Рассказали друзья</label>
+                <label for="contactChoice1" name = "1">Рассказали друзья</label>
             
                 <input type="radio" id="contactChoice2"
                 name="contact">
-                <label for="contactChoice2">Реклама из интернета</label>
+                <label for="contactChoice2" name = "2">Реклама из интернета</label>
                             
                 <p><b>Тип обращения</b></p>
                 <select size="1" style="width: 100px;" name = "category">
@@ -63,17 +74,7 @@
                     </legend>
                 <input type="submit">
 
-                <?php 
-                if(isset($_GET['name'])){
-                    $name=$_GET['name'];
-                    $email=$_GET['email'];
-                    $source=$_GET['source'];
-                    echo 'yes';
-                }else{
-                    echo 'no';
-                }
-                ?>
-
+                
 
         
                 
