@@ -33,10 +33,10 @@
                 </p>
 
                 <p><b>Откуда вы узнали о нас</b></p>
-                <input type="radio" id="contactChoice1" name="contact" value = "mail">
-                <label for="contactChoice1" name = "1">Рассказали друзья</label>
+                <input type="radio" id="contactChoice1" name="contact" value = "1" <?php if ($contact == "1") echo "checked" ?>>
+                <label for="contactChoice1" name = "1" >Рассказали друзья</label>
             
-                <input type="radio" id="contactChoice2" name="contact">
+                <input type="radio" id="contactChoice2" name="contact" value = "2" <?php if ($contact == "2") echo "checked" ?>>
                 <label for="contactChoice2" name = "2">Реклама из интернета</label>
                             
                 <p><b>Тип обращения</b></p>
