@@ -1,22 +1,7 @@
-<!DOCTYPE html>
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="main.css">
-    <title>Андрейцев Михаил 211-361 Лаб_3</title>
-    
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Antonio:wght@100&display=swap" rel="stylesheet">
-</head>
-<body>
-    <header id = "header" class="header">
-        <ul class = "menu">
-            <li>
-                
-            </li>
-        </ul>
-    </header>
+    <?php	
+        include 'header.html';
+    ?>
+
 
     <section id = "about" class="about">
         
@@ -31,6 +16,9 @@
                         echo 'yes';
                     }else{
                         echo 'no';
+                        $login = "";
+                        $email = "";
+                        $contact = "";
                     }
                 ?>
 
@@ -38,18 +26,17 @@
                 <p><b>Обратная связь</b></p>
                 
                 <p><b>ФИО:</b>
-                    <input type="text" maxlength="30" size="40" name="login">
+                    <input type="text" maxlength="30" size="40" name="login" value = <?php echo $login ?>>
                 </p>
                 <p><b>Email:</b>
-                    <input type="text" maxlength="30" size="40" name="email" placeholder="Введите Ваш Email!">
+                    <input type="text" maxlength="30" size="40" name="email" placeholder="Введите Ваш Email!" value = <?php echo $email ?>>
                 </p>
+
                 <p><b>Откуда вы узнали о нас</b></p>
-                <input type="radio" id="contactChoice1"
-                name="contact">
+                <input type="radio" id="contactChoice1" name="contact" value = "mail">
                 <label for="contactChoice1" name = "1">Рассказали друзья</label>
             
-                <input type="radio" id="contactChoice2"
-                name="contact">
+                <input type="radio" id="contactChoice2" name="contact">
                 <label for="contactChoice2" name = "2">Реклама из интернета</label>
                             
                 <p><b>Тип обращения</b></p>
@@ -73,11 +60,6 @@
                         <input type="checkbox" checked> Даю согласие на обработку перональных данных <br>
                     </legend>
                 <input type="submit">
-
-                
-
-        
-                
             </form>
         </div>
     </section>

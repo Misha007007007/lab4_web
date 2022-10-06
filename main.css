@@ -23,18 +23,6 @@
     margin-right: 50px;
 }
 
-li a:hover{
-    font-size: 20px;
-    font-weight: 700;
-    color: #07bbba;
-}
-
-input::placeholder {
-    color: black;
-    font-size: 1.0em;
-}
-
-
 .footer1 {
     position: absolute;
     left: 0;

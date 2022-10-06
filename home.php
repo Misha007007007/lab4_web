@@ -1,22 +1,6 @@
-<!DOCTYPE html>
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="main.css">
-    <title>Андрейцев Михаил 211-361 Лаб_3</title>
-    
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Antonio:wght@100&display=swap" rel="stylesheet">
-</head>
-<body>
-    <header id = "header" class="header">
-        <ul class = "menu">
-            <li>
-                
-            </li>
-        </ul>
-    </header>
+    <?php	
+        include 'header.html';
+    ?>
 
     <section id = "about" class="about">
         <div class="connection" id = "connection">
